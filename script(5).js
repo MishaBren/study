@@ -152,22 +152,47 @@
 
 // ЗАДАЧА
 function factorial(n) {
-  if (n) {
-    result += n * (n - 1)
-    return n
-  } else {
-    return n * factorial()
-  }
+    if (n) {
+        result += n * (n - 1)
+        return n
+    } else {
+        return n * factorial()
+    }
 }
 
 console.log(factorial(5))
 
 function pow(n) {
-  let result = 0
-  for (let i = n; i >= 1; i--) {
-    result += n * (n - 1)
-    console.log(result)
-  }
-  return result
+    let result = 0
+    for (let i = n; i >= 1; i--) {
+
+        result += n * (n - 1)
+
+        console.log(result)
+    }
+    return result
 }
 console.log(pow(5))
+
+
+function factorial(n) {
+    var result = 1;
+    while (n) {
+        result *= n--;
+    }
+    return result;
+}
+
+console.log(factorial(5))
+
+const factInt = (n) => {
+    let res = 1; // итоговый результат
+
+    for (let i = 1; i <= n; i++) {
+        res = res * i;
+        console.log(res)
+    }
+    return res;
+}
+
+console.log(factInt(5))
