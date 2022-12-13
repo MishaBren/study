@@ -150,49 +150,70 @@
 
 // console.log(a(c))
 
-// ЗАДАЧА
-function factorial(n) {
-    if (n) {
-        result += n * (n - 1)
-        return n
-    } else {
-        return n * factorial()
-    }
-}
+// // ЗАДАЧА
+// function factorial(n) {
+//     if (n) {
+//         result += n * (n - 1)
+//         return n
+//     } else {
+//         return n * factorial()
+//     }
+// }
 
-console.log(factorial(5))
+// console.log(factorial(5))
 
-function pow(n) {
-    let result = 0
-    for (let i = n; i >= 1; i--) {
+// function pow(n) {
+//     let result = 0
+//     for (let i = n; i >= 1; i--) {
 
-        result += n * (n - 1)
+//         result += n * (n - 1)
 
-        console.log(result)
-    }
-    return result
-}
-console.log(pow(5))
+//         console.log(result)
+//     }
+//     return result
+// }
+// console.log(pow(5))
 
 
-function factorial(n) {
-    var result = 1;
-    while (n) {
-        result *= n--;
-    }
-    return result;
-}
+// function factorial(n) {
+//     var result = 1;
+//     while (n) {
+//         result *= n--;
+//     }
+//     return result;
+// }
 
-console.log(factorial(5))
+// console.log(factorial(5))
 
-const factInt = (n) => {
-    let res = 1; // итоговый результат
+// const factInt = (n) => {
+//     let res = 1; // итоговый результат
 
-    for (let i = 1; i <= n; i++) {
-        res = res * i;
-        console.log(res)
-    }
-    return res;
-}
+//     for (let i = 1; i <= n; i++) {
+//         res = res * i;
+//         console.log(res)
+//     }
+//     return res;
+// }
 
-console.log(factInt(5))
+// console.log(factInt(5))
+
+// let points = [
+//     { x: 2, y: 2 },
+//     { x: 1, y: 1 }
+// ]
+
+// points.dist = function () {
+//     let p1 = this[0];
+//     let p2 = this[1];
+//     let a = p2.x - p1.x;
+//     let b = p2.y - p1.y;
+//     return Math.sqrt(a * a + b * b);
+// };
+// console.log(points.dist());
+
+//     ---------------------MOBILE TUCH------------
+// touchstart - подія, при кліку на елемент
+// touchmove - спрацювання при перетягуванні
+// touchend - виконання при відірванні пальця
+// touchenter - спрацювання коли при перетягуванні палець заходить на елемент
+// touchleave - коли палець вийшов за межі елементу 
